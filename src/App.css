@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.Header {
+  background: linear-gradient(
+      90deg,
+      rgba(204, 183, 247, 0) -4.79%,
+      rgba(147, 112, 219, 0.28) 50.45%,
+      rgba(204, 183, 246, 0) 105.46%
+    ),
+    linear-gradient(0deg, #e9e9ff, #e9e9ff);
+    height: 7vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
+.footer {
+  height: 30vh;
+  border-radius: 40% 40% 0% 0%;
+  
+  background-color: linear-gradient(90deg, rgba(204, 183, 247, 0) -4.79%, rgba(147, 112, 219, 0.28) 50.45%, rgba(204, 183, 246, 0) 105.46%),
+linear-gradient(0deg, #E9E9FF, #E9E9FF);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.top{
+  display: flex;
+  background: linear-gradient(90deg, rgba(204, 183, 247, 0) -4.79%, rgba(147, 112, 219, 0.28) 50.45%, rgba(204, 183, 246, 0) 105.46%),
+linear-gradient(0deg, #E9E9FF, #E9E9FF);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 50vh;
+  border-radius: 0 0 40% 40%;
 }
+.left {
+  flex: 1 1;
+  position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  overflow: hidden;
+  border-radius: 0 0 40% 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.right{
+  flex: 1;
+  position: relative;
+  /* background: linear-gradient(
+      90deg,
+      rgba(204, 183, 247, 0) -4.79%,
+      rgba(147, 112, 219, 0.28) 50.45%,
+      rgba(204, 183, 246, 0) 105.46%
+    ),
+    linear-gradient(0deg, #e9e9ff, #e9e9ff); */
+  overflow: hidden;
+  border-radius: 0 0 40% 40%;
+}
+.card1-container {
+  display: flex;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checked {
+  color: orange;
 }
