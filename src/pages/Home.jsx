@@ -34,14 +34,15 @@ function Home() {
     textDecoration:"none",
     color:"inherit"
   }
+  
 
 
   return (
     <>
       <Header />
       {/* <hr /> */}
-      <div className="container-fluid top">
-        <hr />
+      <div className="container-fluid top d-grid " style={{gridTemplateColumns:"auto auto",justifyContent:"space-around"}}>
+       
         <Left />
         <Right />
       </div>
